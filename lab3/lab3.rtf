@@ -1,0 +1,331 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset0 TrebuchetMS;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 ArialMT;
+\f3\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red83\green83\blue83;\red16\green60\blue192;
+\red251\green0\blue7;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+{\info
+{\author Curtis LayCraft}}\margl1440\margr1440\vieww14200\viewh16500\viewkind0
+\deftab720
+\pard\pardeftab720\sl760
+
+\f0\fs56 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Lab 3
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl440
+
+\f0\b\fs32 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Purpose:
+\f1\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720
+
+\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls1\ilvl0
+\f2\fs30 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To do low-level socket programming on a standard high-level application protocol (
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 HTTP
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 )\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To use a socket-level service (
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 html2text
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 )\uc0\u8232 \
+\pard\pardeftab720
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl440
+
+\f0\b\fs32 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Due Date: \'a0Thursday, May 21, 2015 at 2:30pm
+\f1\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720
+
+\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl440
+
+\f0\b\fs32 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Handin:
+\f1\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720
+
+\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Follow the steps on the {\field{\*\fldinst{HYPERLINK "https://docs.google.com/document/d/1hzw95JZzH2gzHauQmilbLlxD2AuADrLSV4DKvjr3PcY/edit?usp=sharing"}}{\fldrslt \cf4 \expnd0\expndtw0\kerning0
+\ul \ulc4 \outl0\strokewidth0 \strokec4 Handin Instructions}} page to submit this lab. \'a0You are to hand in the following file:
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls2\ilvl0
+\f3\fs30 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 lab3client.py\uc0\u8232 \
+\pard\pardeftab720
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl440
+
+\f0\b\fs32 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Specification:
+\f1\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720
+
+\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 You are to write a client application that 1/ retrieves HTML text from a user-requested website, and 2/ displays that content in the terminal as formatted ASCII text.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Although there are libraries in python that will retrieve HTML content from websites for you, for this lab you must connect to the web server directly using sockets and navigate the 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 HTTP
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  protocol manually.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 The user will specify a full URL on the commandline. \'a0The URL will be the only commandline parameter, as in:
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\li960\sl320
+
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 python lab3client.py {\field{\*\fldinst{HYPERLINK "http://deepblue.cs.camosun.bc.ca/~rthorndy/htmltest.html"}}{\fldrslt \cf4 \expnd0\expndtw0\kerning0
+\ul \ulc4 \outl0\strokewidth0 \strokec4 http://deepblue.cs.camosun.bc.ca/~rthorndy/htmltest.html}}
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 You may assume that the user starts the URL with \'93
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 http://
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'94. \'a0All you have to do, then, is break up the rest of the URL, as in:
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls3\ilvl0
+\f3\fs30 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 host = \'93deepblue.cs.camosun.bc.ca\'94\uc0\u8232 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 resource = \'93/~rthorndy/htmltest.html\'94\uc0\u8232 \
+\pard\pardeftab720
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Of course, you have to support all \'93
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 http
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'94 URL\'92s, not just the one above! \'a0And note that even if the user doesn\'92t specify an actual \'93resource\'94 -- as in \'93{\field{\*\fldinst{HYPERLINK "http://google.com/"}}{\fldrslt 
+\f3 \cf4 \expnd0\expndtw0\kerning0
+\ul \ulc4 \outl0\strokewidth0 \strokec4 http://google.com}}\'94 -- you need to add the implied resource \'93
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 /
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'94.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Once you have separated the host and the resource, you can connect to the host\'92s port 80, and issue the proper 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 HTTP
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  request for the resource.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 You do not have to do any error handling beyond checking to see if there are 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 <html>
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  and 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 </html>
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  tags in the response. \'a0If they are there, you can proceed; if not, display the entire response you got from the server, and exit.
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Once you\'92ve read in the HTML content, you now connect to the 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 html2text
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  service:
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400
+\ls4\ilvl0
+\f3\fs30 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 host = 204.174.60.53\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 port = 10010\uc0\u8232 \
+\pard\pardeftab720
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Note that this host is multi-threaded, and may put your client in a request queue, so don\'92t assume it\'92s not working if it doesn\'92t respond right away!
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 When the 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 html2text
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  server is ready to process your request, it will send you a 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 READY
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  message. \'a0When you receive that text, go ahead and send the 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 HTML
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  content to the server (in buffered blocks; can be line-based, but don\'92t try to send the 
+\i\b \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 entire
+\i0\b0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  content in one 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 send()
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  call!).
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 The server will assume the content is complete once it sees a \'93
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 </HTML>
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'94 tag (case insensitive). \'a0At that point it will do the 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 html -> text
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  conversion, and start sending back a data stream with the resulting content.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 You must receive that converted content in blocks, until you see the text:
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\qc
+
+\f3\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 COMP173 HTML CONVERT COMPLETE
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Everything the server sent prior to this text is part of the converted content; once you receive this final text, the server will wait for you to send a final \'93
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OK
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'94, and then both client and server sockets will be closed.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400
+
+\f2\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Note that if your client takes more than 3 seconds to respond to any of the server\'92s 
+\f3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 recv()
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  commands, the server will simply terminate your connection and move on without necessarily sending any useful content back to you.
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+}
